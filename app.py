@@ -23,7 +23,7 @@ def sms_reply():
     if msg=="meeting-links":
         reply=meetinglinks()
         
-    if msg=="attendance-links":
+    if msg=="attendance-inks":
         reply=attendancelinks()
         
     if msg=="show-routine":
@@ -61,7 +61,7 @@ def attendancelinks():
 
 
 def artgoblin():
-    artgoblin="this is artgoblin's work"
+    artgoblin="this is artgoblin's "
     return artgoblin
 
 if __name__ == "__main__":
