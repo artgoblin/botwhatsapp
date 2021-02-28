@@ -21,7 +21,7 @@ def sms_reply():
         reply = artgoblin()
     
     elif msg=="--help":
-        reply=help()
+        reply=helpaa()
         
     elif msg=="Meeting-links":
         reply=meetinglinks()
@@ -61,8 +61,8 @@ def attendancelinks():
     "3>*digital ECE-493 lab(moupali ma'am and atunu sir)*=https://docs.google.com/forms/d/e/1FAIpQLSeSFjZTw71l4-kKSbcWsXa7SPa08y0LqskxttrCFCHzG7cirA/viewform?usp=sf_link\n\n"
     return atten
        
-def help():
-    hel="all commands that you shoul know--" 
+def helpaa():
+    hel="all commands that you shoul know--\n\n" 
     "1>To get all meeting links-(Meeting-links)\n"\
     "2>To get all attendance links-(Attendance-links)\n"\
     "3>To have relax-(Funn-time)\n"\
