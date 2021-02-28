@@ -19,12 +19,16 @@ def sms_reply():
    
     if msg=="who" :
         reply = artgoblin()
+        
     if msg=="meeting-links":
         reply=meetinglinks()
+        
     if msg=="attendance-links":
         reply=attendancelinks()
+        
     if msg=="show-routine":
-        reply=routine()
+        reply="https://drive.google.com/file/d/1579vCDJgsE3tQVfDbbXXX7ZtM2_tO_xr/view?usp=sharing"
+        
     if msg=="funn-time":
         reply="https://www.instagram.com/"
         
@@ -54,9 +58,6 @@ def attendancelinks():
     "3>*digital ECE-493 lab(moupali ma'am and atunu sir)*=https://docs.google.com/forms/d/e/1FAIpQLSeSFjZTw71l4-kKSbcWsXa7SPa08y0LqskxttrCFCHzG7cirA/viewform?usp=sf_link\n\n"
     return attendance 
            
-def routine():
-    routinelink="*routine-link*=https://drive.google.com/file/d/1579vCDJgsE3tQVfDbbXXX7ZtM2_tO_xr/view?usp=sharing"
-    return routinelink
 
 
 def artgoblin():
