@@ -15,13 +15,23 @@ def sms_reply():
     # Fetch the message
     msg = request.form.get('Body')
     phone_no=request.form.get('From')
-    reply= fetch_reply(msg,phone_no)
+    
+   
+    if msg=="who" :
+        reply = artgoblin()
+        
+    else:
+        reply= fetch_reply(msg,phone_no)
 
     # Create reply
     resp = MessagingResponse()
-    resp.message("artgoblin",reply)
+    resp.message(reply)
 
     return str(resp)
+
+def artgoblin():
+    artgoblin="this is artgoblin's work"
+    return artgoblin
 
 if __name__ == "__main__":
     app.run()
