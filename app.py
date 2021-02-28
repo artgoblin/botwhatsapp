@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello, World!"
+    return "ARTGOBLIN!"
 
 @app.route("/sms", methods=['POST'])
 def sms_reply():
@@ -19,17 +19,20 @@ def sms_reply():
    
     if msg=="who" :
         reply = artgoblin()
+    
+    elif msg=="--help":
+        reply=help()
         
-    elif msg=="meeting-links":
+    elif msg=="Meeting-links":
         reply=meetinglinks()
         
-    elif msg=="attendance-inks":
+    elif msg=="Attendance-links":
         reply=attendancelinks()
         
-    elif msg=="show-routine":
+    elif msg=="Show-routine":
         reply="https://drive.google.com/file/d/1579vCDJgsE3tQVfDbbXXX7ZtM2_tO_xr/view?usp=sharing"
         
-    elif msg=="funn-time":
+    elif msg=="Funn-time":
         reply="https://www.instagram.com/"
         
     else:
@@ -57,8 +60,16 @@ def attendancelinks():
     "2>*digital ECE-403 theory(moupali ma'am)*=https://docs.google.com/forms/d/e/1FAIpQLSep79lE8_oG2HgfI0TVEnCwEEl96drlQoF7D8BpvSPJthubBw/viewform?usp=sf_link\n\n"\
     "3>*digital ECE-493 lab(moupali ma'am and atunu sir)*=https://docs.google.com/forms/d/e/1FAIpQLSeSFjZTw71l4-kKSbcWsXa7SPa08y0LqskxttrCFCHzG7cirA/viewform?usp=sf_link\n\n"
     return atten
-           
-
+       
+def help():
+    hel="all commands that you shoul know--" 
+    "1>To get all meeting links-(Meeting-links)\n"
+    "2>To get all attendance links-(Attendance-links)\n" 
+    "3>To have relax-(Funn-time)\n"
+    "4>To get the routine-(Show-routine)\n"
+    "5>To get random jokes- just mention jokes in your sentance\n"
+    "have a great day thanks for using and there are also many secrets have fun discovering them....."
+    return hel
 
 def artgoblin():
     artgoblin="this is artgoblin's work"
