@@ -21,7 +21,7 @@ def sms_reply():
     resp = MessagingResponse()
     resp.message(reply)
 
-    return str("artgoblin:",resp)
+    return str(resp)
 
 if __name__ == "__main__":
     app.run()
