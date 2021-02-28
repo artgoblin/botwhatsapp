@@ -20,16 +20,16 @@ def sms_reply():
     if msg=="who" :
         reply = artgoblin()
         
-    if msg=="meeting-links":
+    elif msg=="meeting-links":
         reply=meetinglinks()
         
-    if msg=="attendance-inks":
+    elif msg=="attendance-inks":
         reply=attendancelinks()
         
-    if msg=="show-routine":
+    elif msg=="show-routine":
         reply="https://drive.google.com/file/d/1579vCDJgsE3tQVfDbbXXX7ZtM2_tO_xr/view?usp=sharing"
         
-    if msg=="funn-time":
+    elif msg=="funn-time":
         reply="https://www.instagram.com/"
         
     else:
