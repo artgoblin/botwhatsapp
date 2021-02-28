@@ -31,6 +31,9 @@ def sms_reply():
         
     elif msg=="Show-routine":
         reply="https://drive.google.com/file/d/1579vCDJgsE3tQVfDbbXXX7ZtM2_tO_xr/view?usp=sharing"
+    
+    elif msg=="//syl":
+        reply="https://drive.google.com/file/d/1-x6N3b3rIOZerBF_q08DXl8XFXqJ5h9d/view?usp=sharing"
         
     elif msg=="Funn-time":
         reply="https://www.instagram.com/"
@@ -68,6 +71,7 @@ def helpaa():
     "3>To relax-(Funn-time)\n"\
     "4>To get the routine-(Show-routine)\n"\
     "5>To get random jokes- just mention the word jokes in your sentance or say (yes)\n"\
+    "6>To get the link of syllabus-(//syl)"
     "have a great day thanks for using and also there are many secrets ....have fun discovering them ;-)....."
     return hel
 
