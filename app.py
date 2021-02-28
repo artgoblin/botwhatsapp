@@ -20,7 +20,7 @@ def sms_reply():
     if msg=="who" :
         reply = artgoblin()
     
-    elif msg=="--help":
+    elif msg=="//help":
         reply=helpaa()
         
     elif msg=="Meeting-links":
@@ -62,10 +62,10 @@ def attendancelinks():
     return atten
        
 def helpaa():
-    hel="all commands that you shoul know--\n\n" 
+    hel="all commands that you should know-\n\n" 
     "1>To get all meeting links-(Meeting-links)\n"\
     "2>To get all attendance links-(Attendance-links)\n"\
-    "3>To have relax-(Funn-time)\n"\
+    "3>To relax-(Funn-time)\n"\
     "4>To get the routine-(Show-routine)\n"\
     "5>To get random jokes- just mention jokes in your sentance\n"\
     "have a great day thanks for using and there are also many secrets have fun discovering them....."
