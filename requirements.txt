@@ -1,18 +1,18 @@
 certifi==2020.12.5
-chardet @ file:///C:/ci/chardet_1607706912142/work
-click @ file:///home/linux1/recipes/ci/click_1610990599742/work
+chardet==4.0.0
+click==7.1.2
 Flask==1.1.2
 future==0.18.2
 gunicorn==20.0.4
-idna @ file:///home/linux1/recipes/ci/idna_1610986105248/work
+idna==2.10
 itsdangerous==1.1.0
-Jinja2 @ file:///tmp/build/80754af9/jinja2_1612213139570/work
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 PyJWT==1.7.1
-PySocks @ file:///C:/ci/pysocks_1605305839978/work
-pytz @ file:///tmp/build/80754af9/pytz_1612215392582/work
-requests @ file:///tmp/build/80754af9/requests_1608241421344/work
-six @ file:///C:/ci/six_1605187303045/work
+PySocks==1.7.1
+pytz==2021.1
+requests==2.25.1
+six==1.15.0
 twilio==6.53.0
-urllib3 @ file:///tmp/build/80754af9/urllib3_1611694770489/work
+urllib3==1.26.3
 Werkzeug==1.0.1
