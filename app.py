@@ -67,7 +67,7 @@ def helpaa():
     "2>To get all attendance links-(Attendance-links)\n"\
     "3>To relax-(Funn-time)\n"\
     "4>To get the routine-(Show-routine)\n"\
-    "5>To get random jokes- just mention jokes in your sentance\n"\
+    "5>To get random jokes- just mention the word jokes in your sentance or say (yes)\n"\
     "have a great day thanks for using and also there are many secrets ....have fun discovering them ;-)....."
     return hel
 
