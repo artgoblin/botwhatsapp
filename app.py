@@ -62,7 +62,7 @@ def attendancelinks():
     return atten
        
 def helpaa():
-    hel="all commands that you should know-\n\n" 
+    hel="all commands that you should know-\n\n"\
     "1>To get all meeting links-(Meeting-links)\n"\
     "2>To get all attendance links-(Attendance-links)\n"\
     "3>To relax-(Funn-time)\n"\
