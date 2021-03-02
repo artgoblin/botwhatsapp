@@ -1,6 +1,6 @@
 import os
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "quick-elixir-306207-fd4c678ea7cc.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "simpybo-phqj-75bc064256e5.json"
 
 import dialogflow_v2 as dialogflow
 dialogflow_session_client = dialogflow.SessionsClient()
