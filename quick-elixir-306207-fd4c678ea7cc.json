@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "quick-elixir-306207",
+  "private_key_id": "fd4c678ea7cca20362fa6ba1c675b175b351e01b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDKczSRTxJRcSKZ\nLg0kPM7929d3qI5r1A3o8O8FuiMi4cDUjC9Ed7Pd7mRwfUmG5vKgES+Jt2+NyhMB\naR9w52rwu4mVWDjPsMb8jHkY99DpQncP/3TH0CFjYknjUnnMbvLe+rL0X7l+QD0Z\nQaJv+XHO218SwyWJkCPYvT1eSr1kVGb1pmmkg8tFy1gndMB38QQiOpL7C5NfPoTp\nd1EQ4QZPT38QHxYTnutmpkVxoyekc4oFbIs/AfYWtcHEbsSxyC8yPzeLGjKAAoTq\n6E7tJDer0nHWpPleB2sO42tWsEeyZ3XYJGOQCcg+TBpQ9WFK7MLLa8QY3R+Xd12g\nWtW0yGf5AgMBAAECggEABY09oDNJtOk9u6ZwC2uN3/3kkMF5XMRtHtNmNDZm7d2N\nZJOOw3mAEzjAXfbxlz0QfKQIzuWa4SNTfH+d5YJTHaFNV2BN+CDiGnbeGazIeKN7\n95JXz34jpdtCKQ7pjCbWvjEKmBNjJAhhV8BdbGV4yEvRXAbB9sQr8RU8PTCFG3hj\ntJD6MsBLFV0G0xt4Kz/XJes0PdV9mXdUwXicYtnKrpKJIxDotKoi+jh79WRgeBGB\n8HBWC8avOCz+P2jVYTwRk5l1PlYJUhDiYStneXJ7CO741/eENEzlu9bawjlh1Yl0\n6hDN3G/RnecIPElg96K2mWGXX3hQMbVJUI75ZGRjoQKBgQD8sp076+NmZbwd8zeK\nEOMUI/HXiLT+rNIDSAvipU2YxM4k1VoiQ4f5AEQgOXoiF9/WaCgYUgU8qmrVlU0h\nDVn3aTh305GaLNb1KB6a6Xd63FKHc0nrj9FCt44eXJ3qJCL78up4A+EgRU8Baufz\nvYa98kJfOaQiN0Z39VjzrC+NPQKBgQDNGH2IIFAFtvaHgOOTdVq+V9wNoZxYVd+u\n7WdoAGA29jC2tC6QcqP10x2/MLSUVA7/+MqBRKDn2eMbMK/MtqDBYFNDenE55gdu\na976X9BWOHOGtvKIY+fPAmjuAzmdWoTae75103u4w4IewBp31bEGX4tm4szHwcDn\nkgKS3jypbQKBgQC2R3lYAf4UnQonaIwFkczbeFo5KSm2E5+iMlQwdyEUM9Kniybr\nVF8+5ExAGnXZJfOWy6cwc+nHKv7JdlsenmzpJQNQnFKJLhMY4InDIOnIvCjj/+uw\nehtuzs07ZX+bp9l8eGtdix7Xkmc9FIqgrXQGjDwISKH29Hxmh5pUmz3p2QKBgBLn\ntAKNP/MW52icJ94azi+Hd8BF6lx2JfVA6uw6RKQsU1c0CqrD9nsdZ7uM6MhXaz6L\nF1eNFOvqOLXz6fCL0QuiLmqk6bT1kC/Mf7RCiri34WZEjNynoOGDDlsKLxBjHKXr\nDCZeRSRF2UOuX4I2T2gP/JCSTWAIaxita9FP7PWNAoGBAI5AbhqdoPDLxTTf5Oz0\n17qCtL7ElR0YEqJyw2FTNdQtZl3erYzeCb8NyJQ3psk7+VOQc5AKcaewmU7oRK5H\nxGPBPmkgA48Yy3aG63uGKVNept4X6rzfzI8LxxLHjrY/m8cjHVsUCkQWc8opXf68\nRMJ9jPnuUUfLH7OyfC24CK9t\n-----END PRIVATE KEY-----\n",
+  "client_email": "simpybomusic@quick-elixir-306207.iam.gserviceaccount.com",
+  "client_id": "103289051099985296426",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/simpybomusic%40quick-elixir-306207.iam.gserviceaccount.com"
+}
