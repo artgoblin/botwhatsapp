@@ -2,6 +2,7 @@ from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 
 from utils import fetch_reply 
+from utils1.1 import reply_music
 
 app = Flask(__name__)
 
@@ -34,9 +35,9 @@ def sms_reply():
     
     elif msg=="//syl":
         reply="https://drive.google.com/file/d/1-x6N3b3rIOZerBF_q08DXl8XFXqJ5h9d/view?usp=sharing"
-        
+       
     elif msg=="Funn-time":
-        reply="https://www.instagram.com/"
+        reply=reply_music(msg,phone_no)
         
     else:
         reply= fetch_reply(msg,phone_no)
