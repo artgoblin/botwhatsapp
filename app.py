@@ -37,9 +37,9 @@ def sms_reply():
         
     elif msg=="Funn-time":
        
-       reply="https://www.instagram.com/"
-       reply="https://www.facebook.com/"
-       reply="https://www.youtube.com/"
+       reply="https://www.instagram.com/\n\n"\
+       "https://www.facebook.com/\n\n"\
+       "https://www.youtube.com/"
         
     else:
         reply= fetch_reply(msg,phone_no)
