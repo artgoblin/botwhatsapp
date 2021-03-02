@@ -62,6 +62,7 @@ def attendancelinks():
     "1>*electronics devices and ckt(surojit sir)*=https://forms.gle/rad9YeTFwJPEyoEu7\n\n"\
     "2>*digital ECE-403 theory(moupali ma'am)*=https://docs.google.com/forms/d/e/1FAIpQLSep79lE8_oG2HgfI0TVEnCwEEl96drlQoF7D8BpvSPJthubBw/viewform?usp=sf_link\n\n"\
     "3>*digital ECE-493 lab(moupali ma'am and atunu sir)*=https://docs.google.com/forms/d/e/1FAIpQLSeSFjZTw71l4-kKSbcWsXa7SPa08y0LqskxttrCFCHzG7cirA/viewform?usp=sf_link\n\n"
+    "4>*signal and systems (pronob hazra sir)*=https://docs.google.com/forms/d/e/1FAIpQLSdD8ba9rG5EImu7QMleTh2FCS7vXRV7Ce2n-ZMYud-ZdTP7Tw/viewform?usp=sf_link"
     return atten
        
 def helpaa():
