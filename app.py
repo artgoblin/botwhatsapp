@@ -36,11 +36,10 @@ def sms_reply():
         reply="https://drive.google.com/file/d/1-x6N3b3rIOZerBF_q08DXl8XFXqJ5h9d/view?usp=sharing"
         
     elif msg=="Funn-time":
-        l=["https://www.instagram.com/","https://www.facebook.com/","https://www.youtube.com/"]
-        for i in range(len(l)):
-
-            reply=l[i]
-        
+       
+       reply="https://www.instagram.com/"
+       reply="https://www.facebook.com/"
+       reply="https://www.youtube.com/"
         
     else:
         reply= fetch_reply(msg,phone_no)
