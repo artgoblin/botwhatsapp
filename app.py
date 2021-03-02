@@ -36,11 +36,11 @@ def sms_reply():
         reply="https://drive.google.com/file/d/1-x6N3b3rIOZerBF_q08DXl8XFXqJ5h9d/view?usp=sharing"
         
     elif msg=="Funn-time":
+        l=["https://www.instagram.com/","https://www.facebook.com/","https://www.youtube.com/"]
+        for i in range(len(l)):
+
+            reply=l[i]
         
-        reply=funk()
-    
-    
-    
         
     else:
         reply= fetch_reply(msg,phone_no)
@@ -80,17 +80,6 @@ def helpaa():
     "have a great day thanks for using and also there are many secrets ....have fun discovering them ;-)....."
     return hel
 
-    
-
-def funk():
-    l=["https://www.instagram.com/","https://www.facebook.com/","https://www.youtube.com/"]
-        for i in range(len(l)):
-             k=l[i]
-             
-    return k
-
-
-    
 def artgoblin():
     artgoblin="this is artgoblin's work"
     return artgoblin
