@@ -36,11 +36,11 @@ def sms_reply():
     elif msg=="//syl":
         reply="https://drive.google.com/file/d/1-x6N3b3rIOZerBF_q08DXl8XFXqJ5h9d/view?usp=sharing"
        
-    elif msg=="Funn-time":
-        reply=reply_music(msg,phone_no)
+  
+  
         
     else:
-        reply= fetch_reply(msg,phone_no)
+        reply= reply_music(msg,phone_no)
 
     # Create reply
     resp = MessagingResponse()
