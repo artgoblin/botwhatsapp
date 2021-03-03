@@ -1,8 +1,12 @@
+import os
 from selenium import webdriver 
 
 def replya():
-
-    driver = webdriver.Chrome("Chromedriver.exe")
+    op = webdriver.Chromedriver
+    op.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+    op.add_argumnet("--headless")
+    
+    driver = webdriver.Chrome(executable_path= os.environ.get('CHROMEDRIVER_PATH'), chrome_options=op)
     driver.implicitly_wait(20)
     driver.get("https://meet.google.com/")
 
