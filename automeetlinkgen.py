@@ -5,7 +5,6 @@ from selenium import webdriver
     op.add_argumnet("--disable-gpu")
     op.add_argument('--no-sandbox')
 
-    driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=op)
 
 def replya():
     
