@@ -2,7 +2,7 @@ from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 
 from utils import fetch_reply 
-from automeetlinkgen import replya
+#from automeetlinkgen import replya
 app = Flask(__name__)
 
 @app.route("/")
