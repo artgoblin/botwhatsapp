@@ -41,8 +41,7 @@ def sms_reply():
        "https://www.facebook.com/\n\n"\
        "https://www.youtube.com/"
     
-    elif msg=="meet":
-        reply=replya()
+    ## reply=replya()
 
     else:
         reply= fetch_reply(msg,phone_no)
