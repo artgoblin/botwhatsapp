@@ -1,10 +1,12 @@
 import os
 from selenium import webdriver 
-
-def replya():
     op = webdriver.Chromedriver
     op.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
     op.add_argumnet("--headless")
+    op.add_argument('--no-sandbox')
+    driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=op)
+
+def replya():
     
     driver = webdriver.Chrome(executable_path= os.environ.get('CHROMEDRIVER_PATH'), chrome_options=op)
     driver.implicitly_wait(20)
@@ -16,8 +18,9 @@ def replya():
     driver.implicitly_wait(10)
 
     #to sign in
-    password = "s1234DAS2000"
-    email= "projectsmail768@gmail.com"
+    password = "projectsmail768@gmail.com
+"
+    email= "s1234DAS2000"
     driver.find_element_by_xpath('//*[@id="identifierId"]').send_keys(email)
     driver.find_element_by_id('identifierNext').click()
 

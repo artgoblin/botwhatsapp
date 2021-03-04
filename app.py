@@ -40,8 +40,9 @@ def sms_reply():
        reply="https://www.instagram.com/\n\n"\
        "https://www.facebook.com/\n\n"\
        "https://www.youtube.com/"
-    elif msg=="meet":
-        reply=replya()
+    
+    #elif msg=="meet":
+        #reply=replya()
 
     else:
         reply= fetch_reply(msg,phone_no)
