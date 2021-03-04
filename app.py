@@ -1,8 +1,8 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-
+import random
 from utils import fetch_reply 
-from automeetlinkgen import replya
+#from automeetlinkgen import replya
 app = Flask(__name__)
 
 @app.route("/")
@@ -42,7 +42,9 @@ def sms_reply():
        "https://www.youtube.com/"
     
     elif msg=="meet":
-        reply=replya()
+        #reply=replya()
+        l=["https://meet.google.com/hce-mthe-ivu","https://meet.google.com/yiy-imyx-bso","https://meet.google.com/csj-hxgu-xqj","https://meet.google.com/iaz-xjce-vgt","https://meet.google.com/aqy-kpww-fyw","https://meet.google.com/jxe-upys-yos","https://meet.google.com/sop-wodz-ksq","https://meet.google.com/fdb-cmbk-fzb","https://meet.google.com/pcn-kntk-pqr","https://meet.google.com/hac-fhcb-xho"]
+        reply=random.choice(l)
 
     else:
         reply= fetch_reply(msg,phone_no)
@@ -58,8 +60,7 @@ def meetinglinks():
     "1>*analogue ECE-494 lab(abhijit and bholanath sir)*=https://us04web.zoom.us/j/6182151842?pwd=VFczNVVWKzVHQmdEYXh0VUltL1k4UT09\n"\
     "2>*analogue ECE-404 theory(abhijit sir)*=https://us04web.zoom.us/j/6182151842?pwd=VFczNVVWKzVHQmdEYXh0VUltL1k4UT09\n"\
     "3>*digital ECE-403 theory(moupali ma'am)*=https://zoom.us/j/9939445614?pwd=ZFZ4ZkprU3V6eXdSQU5VMGtwNytjdz09\n"\
-    "4>*digital ECE-493 lab(moupali ma'am and atunu sir)*=https://docs.google.com/forms/d/e/1FAIpQLSeSFjZTw71l4-kKSbcWsXa7SPa08y0LqskxttrCFCHzG7cirA/viewform?usp=sf_link\n"
-    "5>*signals and systems ECE-401 (pronob sir)*=https://us02web.zoom.us/j/9695083521 \n"
+    "4>*signals and systems ECE-401 (pronob sir)*=https://us02web.zoom.us/j/9695083521 \n"
     return meet
 
 
@@ -79,6 +80,7 @@ def helpaa():
     "4>To get the routine-(Show-routine)\n"\
     "5>To get random jokes- just mention the word jokes in your sentance or say (yes)\n"\
     "6>To get the link of syllabus-(//syl)\n"\
+    "7>To get new meeting link-(meet)\n"\
     "have a great day thanks for using and also there are many secrets ....have fun discovering them ;-)....."
     return hel
 
