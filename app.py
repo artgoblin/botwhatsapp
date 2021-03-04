@@ -2,7 +2,7 @@ from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 
 from utils import fetch_reply 
-#from automeetlinkgen import replya
+from automeetlinkgen import replya
 app = Flask(__name__)
 
 @app.route("/")
@@ -41,7 +41,8 @@ def sms_reply():
        "https://www.facebook.com/\n\n"\
        "https://www.youtube.com/"
     
-    ## reply=replya()
+    elif msg=="meet":
+        reply=replya()
 
     else:
         reply= fetch_reply(msg,phone_no)
