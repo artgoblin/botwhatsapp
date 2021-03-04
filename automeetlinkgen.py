@@ -1,10 +1,12 @@
 import os
 from selenium import webdriver 
-    op = webdriver.Chromedriver
-    op.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
-    op.add_argumnet("--disable-gpu")
-    op.add_argument('--no-sandbox')
 
+   
+   
+op = webdriver.Chromedriver
+op.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+op.add_argumnet("--disable-gpu")
+op.add_argument('--no-sandbox')
 
 def replya():
     
