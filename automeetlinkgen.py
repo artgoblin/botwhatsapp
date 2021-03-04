@@ -20,9 +20,9 @@ def replya():
     driver.implicitly_wait(10)
 
     #to sign in
-    password = "projectsmail768@gmail.com
+    password = "s1234DAS2000"
 "
-    email= "s1234DAS2000"
+    email= "projectsmail768@gmail.com"
     driver.find_element_by_xpath('//*[@id="identifierId"]').send_keys(email)
     driver.find_element_by_id('identifierNext').click()
 
