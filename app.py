@@ -1,8 +1,10 @@
 from flask import Flask, request
-from twilio.twiml.messaging_response import MessagingResponse
+import requests
 import random
+from twilio.twiml.messaging_response import MessagingResponse
+
 from utils import fetch_reply 
-#from automeetlinkgen import replya
+from links import replya
 app = Flask(__name__)
 
 @app.route("/")
@@ -15,45 +17,75 @@ def sms_reply():
     # Fetch the message
     msg = request.form.get('Body')
     phone_no=request.form.get('From')
-    
+    # Create reply
+    resp = MessagingResponse()
+    mss=resp.message()
+    responded=False
    
     if msg=="who" :
-        reply = artgoblin()
-    
+        mss.body(artgoblin())
+        responded = True
     elif msg=="//help":
-        reply=helpaa()
-        
+        mss.body(helpaa())
+        responded = True
     elif msg=="Meeting-links":
-        reply=meetinglinks()
-        
+        mss.body(meetinglinks())
+        responded = True
     elif msg=="Attendance-links":
-        reply=attendancelinks()
-        
+        mss.body(attendancelinks())
+        responded = True
     elif msg=="Show-routine":
-        reply="https://drive.google.com/file/d/1579vCDJgsE3tQVfDbbXXX7ZtM2_tO_xr/view?usp=sharing"
-    
+        mss.body(rou())
+        responded = True
     elif msg=="//syl":
-        reply="https://drive.google.com/file/d/1-x6N3b3rIOZerBF_q08DXl8XFXqJ5h9d/view?usp=sharing"
+        mss.body(syl())
+        responded = True
         
     elif msg=="Funn-time":
        
-       reply="https://www.instagram.com/\n\n"\
-       "https://www.facebook.com/\n\n"\
-       "https://www.youtube.com/"
-    
+       mss.body(fun())
+       responded = True
+       
     elif msg=="meet":
-        #reply=replya()
-        l=["https://meet.google.com/hce-mthe-ivu","https://meet.google.com/yiy-imyx-bso","https://meet.google.com/csj-hxgu-xqj","https://meet.google.com/iaz-xjce-vgt","https://meet.google.com/aqy-kpww-fyw","https://meet.google.com/jxe-upys-yos","https://meet.google.com/sop-wodz-ksq","https://meet.google.com/fdb-cmbk-fzb","https://meet.google.com/pcn-kntk-pqr","https://meet.google.com/hac-fhcb-xho"]
-        reply=random.choice(l)
+        
+        mss.body((replya()))
+        responded = True
+    elif msg=="memes":
+          r = requests.get('https://www.reddit.com/r/memes/top.json?limit=20?t=day', headers = {'User-agent': 'your bot 0.1'})
+            
+          if r.status_code == 200:
+                data = r.json()
+                memes = data['data']['children']
+                random_meme = random.choice(memes)
+                meme_data = random_meme['data']
+                title = meme_data['title']
+                image = meme_data['url']
+                mss.body(title)
+                mss.media(image)
+          responded = True
+    
+        
+    elif msg=="sextonine":
+        mss.body(forbidden())
+        responded = True
 
     else:
         reply= fetch_reply(msg,phone_no)
+        mss.body(reply)
+        responded = True
 
-    # Create reply
-    resp = MessagingResponse()
-    resp.message(reply)
-
+    
     return str(resp)
+
+
+def syl():
+    sl="https://drive.google.com/file/d/1-x6N3b3rIOZerBF_q08DXl8XFXqJ5h9d/view?usp=sharing"
+    return sl
+
+def rou():
+    r="https://drive.google.com/file/d/1579vCDJgsE3tQVfDbbXXX7ZtM2_tO_xr/view?usp=sharing"
+    return r
+
 
 def meetinglinks():
     meet="meeting links\n\n" \
@@ -80,14 +112,32 @@ def helpaa():
     "4>To get the routine-(Show-routine)\n"\
     "5>To get random jokes- just mention the word jokes in your sentance or say (yes)\n"\
     "6>To get the link of syllabus-(//syl)\n"\
-    "7>To get new meeting link-(meet)\n"\
+    "7>To generate new meeting link-(meet)\n"\
+    "8>To get random memes-(memes)\n"\
     "have a great day thanks for using and also there are many secrets ....have fun discovering them ;-)....."
     return hel
+def fun():
+    funt="https://www.instagram.com/\n\n"\
+    "https://www.facebook.com/\n\n"\
+    "https://www.youtube.com/"
+    return funt
 
+def forbidden():
+    lol="xhamster7.desi/videos/supergirl-multiple-squirts-with-fuck-machine-on-webcam-xhnNuRZ\n"\
+    "https://www.xxxhdporno.net/porn-video/12700/hot-xxnx-com/\n"\
+    "https://www.pornhat.one/sites/brazzers/\n"\
+    "https://beeg.porn/site/pornhub/\n"\
+    "https://brattysisters.com/\n"\
+    "https://in.letmejerk6.com/se/big-bangbros\n"\
+    "https://xhamster7.desi/videos/red-teamer-markus-hired-for-state-sponsored-anal-pen-test-9016713\n"\
+    "https://xhamster7.desi/videos/kinky-euro-babe-leanne-gets-doggystyle-banged-after-deepthroat-xh4mIlw\n"\
+    "sleep tight"
+    return lol
+   
+        
 def artgoblin():
     artgoblin="this is artgoblin's work"
     return artgoblin
 
 if __name__ == "__main__":
     app.run()
-
