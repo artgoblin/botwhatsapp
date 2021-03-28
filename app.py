@@ -65,9 +65,7 @@ def sms_reply():
           responded = True
     
         
-    elif msg=="sextonine":
-        mss.body(forbidden())
-        responded = True
+    
 
     else:
         reply= fetch_reply(msg,phone_no)
@@ -122,17 +120,7 @@ def fun():
     "https://www.youtube.com/"
     return funt
 
-def forbidden():
-    lol="xhamster7.desi/videos/supergirl-multiple-squirts-with-fuck-machine-on-webcam-xhnNuRZ\n"\
-    "https://www.xxxhdporno.net/porn-video/12700/hot-xxnx-com/\n"\
-    "https://www.pornhat.one/sites/brazzers/\n"\
-    "https://beeg.porn/site/pornhub/\n"\
-    "https://brattysisters.com/\n"\
-    "https://in.letmejerk6.com/se/big-bangbros\n"\
-    "https://xhamster7.desi/videos/red-teamer-markus-hired-for-state-sponsored-anal-pen-test-9016713\n"\
-    "https://xhamster7.desi/videos/kinky-euro-babe-leanne-gets-doggystyle-banged-after-deepthroat-xh4mIlw\n"\
-    "sleep tight"
-    return lol
+
    
         
 def artgoblin():
